@@ -1,4 +1,4 @@
-﻿namespace BonsPrincipiosPraticas.SegregacaoDaInterface
+﻿namespace BonsPrincipiosPraticas.SegregacaoDeInterface.NaoSegregado
 {
     public interface IPassaro
     {
