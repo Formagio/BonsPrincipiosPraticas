@@ -1,4 +1,4 @@
-﻿namespace BonsPrincipiosPraticas.InversaoDeDependencia.SemViolacao
+﻿namespace BonsPrincipiosPraticas.Solid.InversaoDeDependencia.SemViolacao
 {
     public interface IGerenciadorDeTransferencia
     {
@@ -29,6 +29,7 @@
         public byte[] LerDados()
         {
             // Realiza a leitura dos dados do pendrive
+            return new byte[0];
         }
     }
 

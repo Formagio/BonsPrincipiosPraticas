@@ -1,4 +1,4 @@
-﻿namespace BonsPrincipiosPraticas.Liskov.QuadradoRetangulo
+﻿namespace BonsPrincipiosPraticas.Solid.Liskov.QuadradoRetangulo
 {
     public class Retangulo
     {

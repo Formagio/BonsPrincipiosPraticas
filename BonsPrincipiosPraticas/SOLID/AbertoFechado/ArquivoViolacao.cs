@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.AbertoFechado.ArquivoViolacao
+namespace BonsPrincipiosPraticas.Solid.AbertoFechado.ArquivoViolacao
 {
     public class Arquivo
     {

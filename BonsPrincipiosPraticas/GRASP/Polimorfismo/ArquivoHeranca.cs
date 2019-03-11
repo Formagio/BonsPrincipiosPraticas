@@ -1,32 +1,25 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.AbertoFechado.ArquivoHerancaExclusao
+namespace BonsPrincipiosPraticas.Grasp.Polimorfismo
 {
     public abstract class Arquivo
     {
-        public abstract void Apagar();
         public abstract void Gerar();
     }
 
     public class ArquivoExcel : Arquivo
     {
-        public override void Apagar()
-        {
-        }
-
         public override void Gerar()
         {
+            // Gera arquivo em excel
         }
     }
 
     public class ArquivoPdf : Arquivo
     {
-        public override void Apagar()
-        {
-        }
-
         public override void Gerar()
         {
+            // Gera arquivo em pdf
         }
     }
 

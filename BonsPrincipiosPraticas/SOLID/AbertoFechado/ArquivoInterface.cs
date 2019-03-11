@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.AbertoFechado.ArquivoInterface
+namespace BonsPrincipiosPraticas.Solid.AbertoFechado.ArquivoInterface
 {
     public interface IGeradorDeArquivo
     {

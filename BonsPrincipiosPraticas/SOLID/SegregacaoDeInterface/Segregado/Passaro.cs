@@ -1,12 +1,20 @@
-﻿namespace BonsPrincipiosPraticas.SegregacaoDeInterface.NaoSegregado
+﻿namespace BonsPrincipiosPraticas.Solid.SegregacaoDeInterface.Segregado
 {
     public interface IPassaro
     {
+    }
+
+    public interface ICantor
+    {
         void Cantar();
+    }
+
+    public interface IVoador
+    {
         void Voar();
     }
 
-    public class BeijaFlor : IPassaro
+    public class BeijaFlor : IPassaro, ICantor, IVoador
     {
         public void Cantar()
         {
@@ -19,16 +27,11 @@
         }
     }
 
-    public class Avestruz : IPassaro
+    public class Avestruz : IPassaro, ICantor
     {
         public void Cantar()
         {
             // Reproduz o canto da avestruz
-        }
-
-        public void Voar()
-        {
-            // Não faz nada pois avestruz não sabe voar
         }
     }
 }

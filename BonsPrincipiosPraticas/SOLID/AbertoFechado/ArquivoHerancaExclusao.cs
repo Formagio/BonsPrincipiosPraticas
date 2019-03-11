@@ -1,14 +1,19 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.AbertoFechado.ArquivoHeranca
+namespace BonsPrincipiosPraticas.Solid.AbertoFechado.ArquivoHerancaExclusao
 {
     public abstract class Arquivo
     {
+        public abstract void Apagar();
         public abstract void Gerar();
     }
 
     public class ArquivoExcel : Arquivo
     {
+        public override void Apagar()
+        {
+        }
+
         public override void Gerar()
         {
         }
@@ -16,6 +21,10 @@ namespace BonsPrincipiosPraticas.AbertoFechado.ArquivoHeranca
 
     public class ArquivoPdf : Arquivo
     {
+        public override void Apagar()
+        {
+        }
+
         public override void Gerar()
         {
         }

@@ -1,7 +1,7 @@
-using BonsPrincipiosPraticas.Liskov.QuadradoRetangulo;
+using BonsPrincipiosPraticas.Solid.Liskov.QuadradoRetangulo;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BonsPrincipiosPraticas.Liskov.Test
+namespace BonsPrincipiosPraticas.Solid.Liskov.Test
 {
     [TestClass]
     public class QuadradoRetanguloTeste

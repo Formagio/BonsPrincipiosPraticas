@@ -1,4 +1,4 @@
-﻿namespace BonsPrincipiosPraticas.ResponsabilidadeUnica.Interruptor
+﻿namespace BonsPrincipiosPraticas.Solid.ResponsabilidadeUnica.Interruptor
 {
     public class Interruptor
     {
