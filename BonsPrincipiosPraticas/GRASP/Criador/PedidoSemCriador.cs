@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.GRASP.Criador
+namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
 {
     public class Pedido
     {
