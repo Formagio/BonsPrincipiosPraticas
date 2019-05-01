@@ -4,16 +4,11 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
 {
     public class Pedido
     {
-        private readonly List<PedidoItem> itens;
+        public List<PedidoItem> Itens { get; private set; }
 
         public Pedido()
         {
-            itens = new List<PedidoItem>();
-        }
-
-        public void CriarNovoPedidoItem(Produto produto)
-        {
-            itens.Add(new PedidoItem(produto));
+            Itens = new List<PedidoItem>();
         }
     }
 
@@ -35,5 +30,27 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
     {
         public string Nome { get; set; }
         public double Preco { get; set; }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Criamos a instância de pedido
+            var pedido = new Pedido();
+
+            // Criamos um produto
+            var produto = new Produto()
+            {
+                Nome = "Pastel de frango assado",
+                Preco = 2.50
+            };
+
+            // Criamos o pedido item, violando o encapsulamento
+            var pedidoItem = new PedidoItem(produto);            
+
+            // E ficamos sabendo a implementação interna do objeto pedido
+            pedido.Itens.Add(pedidoItem);
+        }
     }
 }

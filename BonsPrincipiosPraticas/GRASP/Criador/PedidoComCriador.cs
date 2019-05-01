@@ -36,4 +36,23 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoComCriador
         public string Nome { get; set; }
         public double Preco { get; set; }
     }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Criamos a instância de pedido
+            var pedido = new Pedido();
+
+            // Criamos um produto
+            var produto = new Produto()
+            {
+                Nome = "Pastel de frango assado",
+                Preco = 2.50
+            };
+
+            // Solicitamos ao objeto a criação de um novo pedido item
+            pedido.CriarNovoPedidoItem(produto);
+        }
+    }
 }
