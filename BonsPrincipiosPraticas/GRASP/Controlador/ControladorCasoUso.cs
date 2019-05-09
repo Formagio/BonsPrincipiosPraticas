@@ -1,6 +1,25 @@
-﻿namespace BonsPrincipiosPraticas.GRASP.Controlador
+﻿namespace BonsPrincipiosPraticas.GRASP.ControladorCasoDeUso
 {
-    public class ControladorCasoUso
+    public class ControladorCliente
     {
+        public void Listar()
+        {
+            // Implementação
+        }
+
+        public void Incluir()
+        {
+            // Implementação
+        }
+
+        public void Editar()
+        {
+            // Implementação
+        }
+
+        public void Excluir()
+        {
+            // Implementação
+        }
     }
 }
