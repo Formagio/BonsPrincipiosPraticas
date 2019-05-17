@@ -4,17 +4,17 @@
     {
     }
 
-    public interface ICantor
+    public interface IPassaroCantor
     {
         void Cantar();
     }
 
-    public interface IVoador
+    public interface IPassaroVoador
     {
         void Voar();
     }
 
-    public class BeijaFlor : IPassaro, ICantor, IVoador
+    public class BeijaFlor : IPassaro, IPassaroCantor, IPassaroVoador
     {
         public void Cantar()
         {
@@ -27,7 +27,7 @@
         }
     }
 
-    public class Avestruz : IPassaro, ICantor
+    public class Avestruz : IPassaro, IPassaroCantor
     {
         public void Cantar()
         {
