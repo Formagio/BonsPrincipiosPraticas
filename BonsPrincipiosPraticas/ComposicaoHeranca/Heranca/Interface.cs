@@ -1,5 +1,10 @@
 ﻿namespace BonsPrincipiosPraticas.ComposicaoHeranca.Heranca.Interface
 {
+    public abstract class Passaro
+    {
+        public abstract void Exibir();
+    }
+
     public interface IPassaroCantor
     {
         void Cantar();
@@ -15,7 +20,7 @@
         void Voar();
     }
 
-    public class BeijaFlor : IPassaroCantor, IPassaroOviparo, IPassaroVoador
+    public class BeijaFlor : Passaro, IPassaroCantor, IPassaroOviparo, IPassaroVoador
     {
         public void BotarOvo()
         {
@@ -27,13 +32,18 @@
             // Reproduz o canto do beija-flor
         }
 
+        public override void Exibir()
+        {
+            // Exibe a imagem de um beija-flor
+        }
+
         public void Voar()
         {
             // Exibe o voo do beija-flor
         }
     }
 
-    public class Kiwi : IPassaroCantor, IPassaroOviparo
+    public class Kiwi : Passaro, IPassaroCantor, IPassaroOviparo
     {
         public void BotarOvo()
         {
@@ -44,13 +54,23 @@
         {
             // Reproduz o canto do kiwi
         }
+
+        public override void Exibir()
+        {
+            // Exibe a imagem de um kiwi
+        }
     }
 
-    public class CucoRelogio : IPassaroCantor
+    public class CucoRelogio : Passaro, IPassaroCantor
     {
         public void Cantar()
         {
             // Reproduz o som do relógio cuco
+        }
+
+        public override void Exibir()
+        {
+            // Exibe a imagem de um relógio tipo cuco
         }
     }
 }
