@@ -24,12 +24,12 @@
     {
         public void BotarOvo()
         {
-            // Exibe ovo do beija-flor
+            // Faz o pássaro botar um ovo
         }
 
         public void Cantar()
         {
-            // Reproduz o canto do beija-flor
+            // Faz o pássaro cantar
         }
 
         public override void Exibir()
@@ -39,7 +39,7 @@
 
         public void Voar()
         {
-            // Exibe o voo do beija-flor
+            // Faz o pássaro voar
         }
     }
 
@@ -47,12 +47,12 @@
     {
         public void BotarOvo()
         {
-            // Exibe ovo do kiwi
+            // Faz o pássaro botar um ovo
         }
 
         public void Cantar()
         {
-            // Reproduz o canto do kiwi
+            // Faz o pássaro
         }
 
         public override void Exibir()
@@ -65,7 +65,7 @@
     {
         public void Cantar()
         {
-            // Reproduz o som do relógio cuco
+            // Faz o pássaro cantar
         }
 
         public override void Exibir()

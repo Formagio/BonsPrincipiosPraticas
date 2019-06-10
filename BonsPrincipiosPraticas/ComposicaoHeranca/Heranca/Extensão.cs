@@ -9,7 +9,7 @@
 
         public virtual void Cantar()
         {
-            // Reproduz o canto do pássaro
+            // Faz o pássaro cantar
         }
 
         public virtual void Voar()
