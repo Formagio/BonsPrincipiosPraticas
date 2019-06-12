@@ -2,12 +2,12 @@
 {
     public abstract class Passaro
     {
-        private IComportamentoDeOvo comportamentoDeOvo;
+        private IComportamentoDeBotarOvo comportamentoDeBotarOvo;
         private IComportamentoDeVoo comportamentoDeVoo;
 
-        public void DefinirComportamentoDeOvo(IComportamentoDeOvo comportamentoDeOvo)
+        public void DefinirComportamentoDeBotarOvo(IComportamentoDeBotarOvo comportamentoDeBotarOvo)
         {
-            this.comportamentoDeOvo = comportamentoDeOvo;
+            this.comportamentoDeBotarOvo = comportamentoDeBotarOvo;
         }
 
         public void DefinirComportamentoDeVoo(IComportamentoDeVoo comportamentoDeVoo)
@@ -18,7 +18,7 @@
         public void BotarOvo()
         {
             // Dispara comportamento de botar ovo
-            comportamentoDeOvo.BotarOvo();
+            comportamentoDeBotarOvo.BotarOvo();
         }
 
         public void Cantar()
@@ -35,7 +35,7 @@
         public abstract void Exibir();        
     }
 
-    public interface IComportamentoDeOvo
+    public interface IComportamentoDeBotarOvo
     {
         void BotarOvo();
     }
@@ -45,7 +45,7 @@
         void Voar();
     }
 
-    public class ComportamentoDePassaroQueBotaOvo : IComportamentoDeOvo
+    public class ComportamentoDePassaroQueBotaOvo : IComportamentoDeBotarOvo
     {
         public void BotarOvo()
         {
@@ -53,7 +53,7 @@
         }
     }
 
-    public class ComportamentoDePassaroQueNaoBotaOvo : IComportamentoDeOvo
+    public class ComportamentoDePassaroQueNaoBotaOvo : IComportamentoDeBotarOvo
     {
         public void BotarOvo()
         {
@@ -84,7 +84,7 @@
             var comportamentoDePassaroQueBotaOvo = new ComportamentoDePassaroQueBotaOvo();
             var comportamentoDePassaroQueVoa = new ComportamentoDePassaroQueVoa();
 
-            DefinirComportamentoDeOvo(comportamentoDePassaroQueBotaOvo);
+            DefinirComportamentoDeBotarOvo(comportamentoDePassaroQueBotaOvo);
             DefinirComportamentoDeVoo(comportamentoDePassaroQueVoa);
         }
 
@@ -101,7 +101,7 @@
             var comportamentoDePassaroQueBotaOvo = new ComportamentoDePassaroQueBotaOvo();
             var comportamentoDePassaroQueNaoVoa = new ComportamentoDePassaroQueNaoVoa();
 
-            DefinirComportamentoDeOvo(comportamentoDePassaroQueBotaOvo);
+            DefinirComportamentoDeBotarOvo(comportamentoDePassaroQueBotaOvo);
             DefinirComportamentoDeVoo(comportamentoDePassaroQueNaoVoa);
         }
 
@@ -118,7 +118,7 @@
             var comportamentoDePassaroQueNaoBotaOvo = new ComportamentoDePassaroQueNaoBotaOvo();
             var comportamentoDePassaroQueNaoVoa = new ComportamentoDePassaroQueNaoVoa();
 
-            DefinirComportamentoDeOvo(comportamentoDePassaroQueNaoBotaOvo);
+            DefinirComportamentoDeBotarOvo(comportamentoDePassaroQueNaoBotaOvo);
             DefinirComportamentoDeVoo(comportamentoDePassaroQueNaoVoa);
         }
 
