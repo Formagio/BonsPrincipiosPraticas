@@ -42,7 +42,7 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
             // Criamos um produto
             var produto = new Produto()
             {
-                Nome = "Pastel de frango assado",
+                Nome = "Pastel assado de frango",
                 Preco = 2.50
             };
 

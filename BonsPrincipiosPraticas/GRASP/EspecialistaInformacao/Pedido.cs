@@ -52,21 +52,21 @@ namespace BonsPrincipiosPraticas.GRASP.EspecialistaInformacao
             var pedido = new Pedido();
 
             // Criamos os produtos
-            var pastelDeFrangoAssado = new Produto()
+            var pastelAssadoDeFrango = new Produto()
             {
-                Nome = "Pastel de frango assado",
+                Nome = "Pastel assado de frango",
                 Preco = 2.50
             };
 
-            var pastelDeCarneFrito = new Produto()
+            var pastelFritoDeCarne = new Produto()
             {
-                Nome = "Pastel de carne frito",
+                Nome = "Pastel frito de carne",
                 Preco = 1.50
             };
 
             // Solicitamos ao objeto a criação dos itens do pedido
-            pedido.CriarNovoPedidoItem(pastelDeFrangoAssado);
-            pedido.CriarNovoPedidoItem(pastelDeCarneFrito);
+            pedido.CriarNovoPedidoItem(pastelAssadoDeFrango);
+            pedido.CriarNovoPedidoItem(pastelFritoDeCarne);
 
             // Solicitamos o cálculo do valor total
             Console.Write($"Valor total do pedido: {pedido.CalcularValorTotal()}");
