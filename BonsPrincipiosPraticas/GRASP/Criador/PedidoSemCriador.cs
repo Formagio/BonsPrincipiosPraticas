@@ -36,20 +36,20 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
     {
         static void Main(string[] args)
         {
-            // Criamos a instância de pedido
+            // Criação da instância de pedido
             var pedido = new Pedido();
 
-            // Criamos um produto
+            // Criação de um produto
             var produto = new Produto()
             {
                 Nome = "Pastel assado de frango",
                 Preco = 2.50
             };
 
-            // Criamos o pedido item, violando o encapsulamento
+            // Criação do pedido item, violando o encapsulamento
             var pedidoItem = new PedidoItem(produto);            
 
-            // E ficamos sabendo a implementação interna do objeto pedido
+            // É exposta a implementação interna do objeto pedido
             pedido.Itens.Add(pedidoItem);
         }
     }
