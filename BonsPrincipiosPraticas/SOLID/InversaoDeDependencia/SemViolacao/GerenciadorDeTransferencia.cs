@@ -19,7 +19,7 @@
     {
         public void Transferir(IUnidadeExterna unidadeExterna, IUnidadeInterna unidadeInterna)
         {
-            var dados = unidadeExterna.LerDados();
+            byte[] dados = unidadeExterna.LerDados();
             unidadeInterna.GravarDados(dados);
         }
     }

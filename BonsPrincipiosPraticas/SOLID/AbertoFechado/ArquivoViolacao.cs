@@ -24,7 +24,7 @@ namespace BonsPrincipiosPraticas.Solid.AbertoFechado.ArquivoViolacao
     {
         public void GerarArquivos(List<Arquivo> arquivos)
         {
-            foreach (var arquivo in arquivos)
+            foreach (Arquivo arquivo in arquivos)
             {
                 switch (arquivo)
                 {

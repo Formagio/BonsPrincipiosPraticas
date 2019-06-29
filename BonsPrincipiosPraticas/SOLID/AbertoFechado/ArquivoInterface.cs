@@ -25,7 +25,7 @@ namespace BonsPrincipiosPraticas.Solid.AbertoFechado.ArquivoInterface
     {
         public void GerarArquivos(List<IGeradorDeArquivo> geradoresDeArquivo)
         {
-            foreach (var geradorDeArquivo in geradoresDeArquivo)
+            foreach (IGeradorDeArquivo geradorDeArquivo in geradoresDeArquivo)
             {
                 geradorDeArquivo.GerarArquivo();
             }

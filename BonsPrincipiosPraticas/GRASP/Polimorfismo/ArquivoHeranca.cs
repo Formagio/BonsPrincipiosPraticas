@@ -27,7 +27,7 @@ namespace BonsPrincipiosPraticas.Grasp.Polimorfismo
     {
         public void GerarArquivos(List<Arquivo> arquivos)
         {
-            foreach (var arquivo in arquivos)
+            foreach (Arquivo arquivo in arquivos)
             {
                 arquivo.Gerar();
             }

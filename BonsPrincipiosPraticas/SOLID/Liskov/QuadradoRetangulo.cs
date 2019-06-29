@@ -33,7 +33,7 @@
             retangulo.Altura = retangulo.Altura * 2;
             retangulo.Largura = retangulo.Largura * 4;
 
-            var area = retangulo.CalcularArea();
+            int area = retangulo.CalcularArea();
             // Alguma operação com a área
         }
     }

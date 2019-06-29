@@ -4,7 +4,7 @@
     {
         public void Transferir(Pendrive pendrive, DiscoRigido discoRigido)
         {
-            var dados = pendrive.LerDados();
+            byte[] dados = pendrive.LerDados();
             discoRigido.GravarDados(dados);
         }
     }
