@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.Refatoracao
+namespace BonsPrincipiosPraticas.Refatoracao.SegregacaoDeInterface
 {
     public class Process
     {

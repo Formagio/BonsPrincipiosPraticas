@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BonsPrincipiosPraticas.Refatoracao.ApendiceB
+namespace BonsPrincipiosPraticas.Refatoracao.AbertoFechado
 {
     internal class HoldprintBooleanContent : FieldContent
     {
