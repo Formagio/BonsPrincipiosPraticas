@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BonsPrincipiosPraticas.GRASP.EspecialistaInformacao
+namespace BonsPrincipiosPraticas.GRASP.EspecialistaInformacao.PedidoCompleto
 {
     public class Pedido
     {
