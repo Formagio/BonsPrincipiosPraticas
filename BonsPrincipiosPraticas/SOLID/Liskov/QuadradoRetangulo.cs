@@ -26,7 +26,7 @@
         }
     }
 
-    public class Classe
+    public class ClasseQualquer
     {
         public void MetodoQualquer(Retangulo retangulo)
         {
