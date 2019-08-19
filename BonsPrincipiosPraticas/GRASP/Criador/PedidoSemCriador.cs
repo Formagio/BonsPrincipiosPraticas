@@ -32,7 +32,7 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
         public double Preco { get; set; }
     }
 
-    class Program
+    /*class Program
     {
         static void Main(string[] args)
         {
@@ -52,5 +52,5 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoSemCriador
             // É exposta a implementação interna do objeto pedido
             pedido.Itens.Add(pedidoItem);
         }
-    }
+    }*/
 }

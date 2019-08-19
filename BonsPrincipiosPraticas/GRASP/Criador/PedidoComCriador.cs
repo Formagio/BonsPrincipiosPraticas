@@ -37,7 +37,7 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoComCriador
         public double Preco { get; set; }
     }
 
-    class Program
+    /*class Program
     {
         static void Main(string[] args)
         {
@@ -54,5 +54,5 @@ namespace BonsPrincipiosPraticas.GRASP.Criador.PedidoComCriador
             // É solicitamos ao objeto pedido a criação de um novo pedido item
             pedido.CriarNovoPedidoItem(produto);
         }
-    }
+    }*/
 }

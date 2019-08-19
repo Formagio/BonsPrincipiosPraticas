@@ -44,7 +44,7 @@ namespace BonsPrincipiosPraticas.GRASP.EspecialistaInformacao.PedidoCompleto
         public double Preco { get; set; }
     }
 
-    class Program
+    /*class Program
     {
         static void Main(string[] args)
         {
@@ -71,5 +71,5 @@ namespace BonsPrincipiosPraticas.GRASP.EspecialistaInformacao.PedidoCompleto
             // Solicitamos o cálculo do valor total
             Console.Write($"Valor total do pedido: {pedido.CalcularValorTotal()}");
         }
-    }
+    }*/
 }
